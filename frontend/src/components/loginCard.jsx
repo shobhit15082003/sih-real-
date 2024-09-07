@@ -40,6 +40,8 @@ const LoginCard = () => {
     }
   };
 
+  const Navigate=useNavigate();
+
   return (
     <StyledCard>
       <CardContent>
@@ -70,7 +72,9 @@ const LoginCard = () => {
             fullWidth
           />
 
-          <Button variant="contained" color="success" type="submit" fullWidth>
+          <Button variant="contained" color="success" type="submit" fullWidth onClick={()=>{
+            Navigate('/farmer-details')
+          }}>
             Login
           </Button>
         </Box>

@@ -55,7 +55,7 @@ const SignUpCard = () => {
       console.log("email: " + email);
     }
   };
-
+const Navigate=useNavigate();
   return (
     <StyledCard>
       <CardContent>
@@ -100,7 +100,9 @@ const SignUpCard = () => {
             </RadioGroup>
           </FormControl>
 
-          <Button variant="contained" color="success" type="submit" fullWidth>
+          <Button variant="contained" color="success" type="submit" fullWidth onClick={()=>{
+            role=='buyer'?Navigate('/buyer-details'):Navigate('/farmer-details');
+          }}>
             Sign Up
           </Button>
         </Box>

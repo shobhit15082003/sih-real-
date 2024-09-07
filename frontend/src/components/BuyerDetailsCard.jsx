@@ -3,8 +3,12 @@ import { FiMessageSquare } from "react-icons/fi";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { MdVerified } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
+import { useNavigate } from "react-router";
+
+
 
 export const BuyerDetailCard = () => {
+  const Navigate=useNavigate();
   return (
     <div className="flex ml-10 gap-10 max-h-screen  items-start w-1/4 mt-20">
       <div className="flex flex-col gap-8">
@@ -26,8 +30,18 @@ export const BuyerDetailCard = () => {
               New Listing
             </h2>
           </div> */}
+          <div className="flex items-center gap-2" onClick={()=>{
+            Navigate('/buyerProfile');
+          }}>
+          <MdVerified size={20} className="text-green-700" />
+            <h2 className="font-semibold hover:bg-green-700 hover:text-white rounded-lg px-2 py-1">
+              Verify
+            </h2>
+          </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={()=>{
+            Navigate('/listing')
+          }}>
             <FiMessageSquare size={20} className="text-green-700" />
             <h2 className="font-semibold hover:bg-green-700 hover:text-white rounded-lg px-2 py-1">
               OngoingTalks
@@ -43,14 +57,18 @@ export const BuyerDetailCard = () => {
           </div>
 
         
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={()=>{
+            Navigate('/completed')
+          }}>
             <MdVerified size={20} className="text-green-700" />
             <h2 className="font-semibold hover:bg-green-700 hover:text-white rounded-lg px-2 py-1">
               Confirmed
             </h2>
           </div>
         </div>
-        <button className="flex justify-end items-center gap-2">
+        <button className="flex justify-end items-center gap-2" onClick={()=>{
+          Navigate('/');
+        }}>
             {/* <MdVerified size={20} className="text-red-500" /> */}
             <h2 className="font-semibold hover:bg-red-700 bg-red-400 text-white rounded-lg px-2 py-1">
               Logout
