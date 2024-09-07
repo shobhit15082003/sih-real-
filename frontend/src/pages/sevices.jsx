@@ -1,5 +1,5 @@
 import { service_image1, service_image2, service_image3, service_image4 } from "../constant";
-
+import { Link } from "react-router-dom";
 export const Services = () => {
   return (
     <div id="service-section" className="mt-20 mb-10 mx-8">
@@ -15,12 +15,13 @@ export const Services = () => {
             />
           </div>
           <div className="mt-4 flex-grow text-center">
-            <h5 className="text-xl font-semibold">Algo Farming</h5>
+            <h5 className="text-xl font-semibold">Contract Crop Cultivation</h5>
             <p className="mt-2 text-gray-600">
-              Algo Farming uses advanced algorithms to optimize agricultural practices for higher efficiency and sustainability.
+              Contract Crop Cultivation ensures a reliable partnership for large-scale farming projects, providing support from planting to harvesting.
             </p>
           <button className="bg-green-700 mb-4  text-center  text-white rounded-2xl mt-4 w-32 py-3 hover:bg-green-900">
-            Enquire Now
+            <Link to="/enqurie">   Enquire Now</Link>
+         
           </button>
           </div>
         </div>
@@ -34,12 +35,12 @@ export const Services = () => {
             />
           </div>
           <div className="mt-4 flex-grow">
-            <h5 className="text-xl font-semibold">Medicinal Farming</h5>
+            <h5 className="text-xl font-semibold">Horticultural Assistance</h5>
             <p className="mt-2 text-gray-600">
-              Medicinal Farming focuses on cultivating plants with therapeutic properties used in the pharmaceutical industry.
+              Our Horticultural Assistance program helps farmers with expert advice and tools to grow fruits, vegetables, and ornamental plants effectively.
             </p>
             <button className="bg-green-700 mb-4  text-center  text-white rounded-2xl mt-4 w-32 py-3 hover:bg-green-900">
-            Enquire Now
+            <Link to="/enqurie">   Enquire Now</Link>
           </button>
           </div>
         </div>
@@ -54,12 +55,12 @@ export const Services = () => {
             />
           </div>
           <div className="mt-4 flex-grow">
-            <h5 className="text-xl font-semibold">Poultry Farming</h5>
+            <h5 className="text-xl font-semibold">Livestock Management</h5>
             <p className="mt-2 text-gray-600">
-              Poultry Farming involves raising chickens, ducks, and other birds for meat and egg production, ensuring quality products.
+              Livestock Management services provide care and breeding support for cattle, sheep, and goats, ensuring the best quality meat and dairy.
             </p>
             <button className="bg-green-700 mb-4  text-center  text-white rounded-2xl mt-4 w-32 py-3 hover:bg-green-900">
-            Enquire Now
+            <Link to="/enqurie">   Enquire Now</Link>
           </button>
           </div>
         </div>
@@ -74,12 +75,12 @@ export const Services = () => {
             />
           </div>
           <div className="mt-4 flex-grow">
-            <h5 className="text-xl font-semibold">Dairy Farming</h5>
+            <h5 className="text-xl font-semibold">Irrigation Solutions</h5>
             <p className="mt-2 text-gray-600">
-              Dairy Farming is centered around the production of milk and dairy products, ensuring the best quality from healthy livestock.
+              We offer advanced Irrigation Solutions to help farmers optimize water use and improve crop yields through modern, sustainable techniques.
             </p>
             <button className="bg-green-700 mb-4  text-center  text-white rounded-2xl mt-4 w-32 py-3 hover:bg-green-900">
-            Enquire Now
+            <Link to="/enqurie">   Enquire Now</Link>
           </button>
           </div>
         </div>

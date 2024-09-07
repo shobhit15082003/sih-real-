@@ -31,7 +31,7 @@ export const FarmerDetailCard = () => {
           <div className="border border-green-500 w-24 h-24 rounded-full flex items-center justify-center">
             <FaUser size={40} className="text-green-700" />
           </div>
-          {<h2 className="text-lg font-semibold">Farmer Name</h2>
+          <h2 className="text-lg font-semibold">Farmer Name</h2>
           <h2 className="text-gray-600">Farmer Address</h2>
         </div>
 
